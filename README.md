@@ -1,0 +1,2 @@
+# infoCollector
+Spring Boot application
