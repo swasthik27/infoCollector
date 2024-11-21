@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style2.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+<div class="dashboard-container">
+    <h1>Admin Dashboard</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Role</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Thymeleaf or backend template engine for dynamic data -->
+        <tr th:each="user : ${users}">
+            <td th:text="${user.username}"></td>
+            <td th:text="${user.email}"></td>
+            <td th:text="${user.role}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

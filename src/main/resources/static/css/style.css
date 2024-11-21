@@ -1,0 +1,77 @@
+/* Sidebar Styling */
+.sidebar {
+    background-color: #007bff; /* Blue background for the sidebar */
+    color: white;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.sidebar h2 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #333; /* Dark text for readability */
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    background-color: #fff; /* White background for the buttons */
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #0056b3; /* Blue hover effect */
+    color: white; /* White text on hover */
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 250px; /* Offset by the width of the sidebar */
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #fff; /* Set to white */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content */
+}
+
+/* Button Styling */
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 80px 80px; /* Increased padding */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px; /* Increased font size */
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
